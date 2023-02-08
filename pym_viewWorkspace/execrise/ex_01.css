@@ -1,0 +1,24 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color:blue;
+}
+h1,p{
+    color: green;
+}
+div p{
+    color: yellow;
+}
+
+.test1{
+    font-size: 30px;
+    color:blueviolet;
+}
+span.test1{
+    color: gray;
+}
+
+#test2{
+    color:palevioletred;
+}

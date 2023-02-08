@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.content{
+    background-color: white;
+    width: 620px;
+    padding: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.content__head{
+    /* background-color: pink; */
+    margin-bottom: 20px;
+    border-bottom: 1px dashed gray;
+    padding-bottom: 20px;
+}
+
+.haed__title{
+    background-color: orange;
+    color:white;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.head__sub-title{
+    font-size: 18px;
+}
+.point{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0;
+    display: block;
+
+}
+.content__body{
+    /* background-color: lightblue; */
+    padding: 30px 20px;
+    border: 1px solid lightgray;
+}
+
+.body__title{
+    font-size: 22px;
+    font-weight: 600;
+    background-color: lightgray;
+    padding: 5px 0 5px 15px;
+    margin-bottom: 10px;
+}
+
+.kimchi{
+    color: red;
+    font-weight: 600;
+}
+
+.egg{
+    color: orange;
+    font-weight: 600;
+}
+
+.highlight{
+    font-size: 20px;
+    color: blue;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.content-date{
+    color:gray;
+    font-size: 12px;
+    text-align: right;
+}

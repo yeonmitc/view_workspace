@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>position 예제</title>
+    <style>
+        /*
+            절대위치(absolute) : 위치좌표 고정 : 그 위치에서 움직이지않는다 
+            상대위치(relative) : 상위박스(부모박스)를 기준으로 상위박스가 움직이면 같이 움직인다 
+            fixed: 화면을 기준으로 절대위치 
+            sticky : 부모박스의 상대적 위치값에서 화면의 기준으로 절대위치 
+        */
+        div{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background: red;
+        }
+        /*
+        position은 디폴트가 static이다 
+
+        */
+        .container{
+            /* class box div를 제외한 나머지 div 속성  */
+            background: yellow;
+            position: relative;
+            left: 20px;
+            top : 20px;
+
+
+        }
+        /*
+        relative는 기존 위치에서 
+        왼쪽 20 오른쪽 20 움직인것 
+
+        */
+        .box{
+            background: blue;
+            position: absolute;
+             /*
+            
+            position: absolute;
+            position: fixed;
+            position: sticky;
+            */
+            left: 20px;
+            top : 20px; 
+        }
+
+    </style>
+</head>
+<body>
+    <article class="container">
+        <div></div>
+        <div class="box"> I'm Box</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </article>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: pink;
+    height: 500px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    /* flex 여러줄 만들려면 반드시 wrap 해줘야함   */
+    flex-wrap: wrap;
+    width : 100%;
+    row-gap: 10px;
+}
+
+.container div{
+    background: seagreen;
+    border: 1px solid white;
+    color: aliceblue;
+    /*  flex 자식 요소 에 width에 %를 줘서 row 의 갯수 지정 가능  */
+    /* width : 25%  --> 4개 */
+    /* wtidh : 50% --> 2개 */
+    width: 25%; 
+    height: 30%;
+}
+
+.box6{
+    /* 자식 요소가 부모요소의 영역보다 작으면 부모만큼 늘려줌 flex-grow 0 이 디폴트 */
+    flex-grow: 1;
+    /* order 기본값이 0 이 디폴트 낮은순 -> 높은순으로 자식 배치자동으로 해준다  */
+    order: -1;
+}
+
+.box7{
+    /* 부모 box에 공간이 있을때 자식박스 단독으로 설정 가능 */
+    align-self: flex-end;
+}

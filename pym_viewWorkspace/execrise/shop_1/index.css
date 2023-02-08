@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 75px;
+}
+#intro{
+    height: 100%;
+    display: grid;
+
+    grid-template: "logo menu" 1fr / 1fr 1fr;
+}
+
+.logo{
+    height: 100%;
+    background-color: #fbfbfb;
+    grid-area: logo;
+    height: 75px;
+    line-height: 75px;
+    margin-left:50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+ul {
+    height: 100%;
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+    grid-area: menu;
+    display: grid;
+    grid-template: "one two three" 1fr / 1fr 1fr 1fr;
+
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+ul .one {
+    background-color: #efeff6;
+    grid-area: one;
+}
+
+ul .two {
+    background-color: #dcdcec;
+    grid-area: two;
+}
+
+ul .three {
+    background-color: #cbcae3;
+    grid-area: three;
+}
+
+main .one {
+    background-color: #532fa1;
+}
+
+main .two {
+    background-color: #a44789;
+}
+
+main .three {
+    background-color: #3ab6bc;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    color:white;
+    padding-bottom: 10px;
+}
+
+.item{
+    width: 50%;
+}
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    /* width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; */
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img:hover{
+    /* content 내용 자체의 변화 */
+    /* scale : 크기를 변경 ==> 1 기준 20%로 키우겠다는 의미  */
+    transform: scale(1.2); 
+    /* 1초 동안 천천히 변화 하겠다 라는 의미  */
+    transition: 1s;
+}
+
+@media screen and (max-width: 760px){
+    h2{
+        /* 기준 font에서 두배  */
+        font-size: 2em;
+    }
+    .item{
+        width: 100%;
+    }
+    #footer{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
